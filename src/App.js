@@ -12,7 +12,7 @@ const App = createBrowserRouter([
     element: <Detail />,
   },
   {
-    basename: process.env.PUBLIC_URL,
+    basename: `${process.env.PUBLIC_URL}`,
   },
 ]);
 
