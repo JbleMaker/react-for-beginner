@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import propTypes from "prop-types";
 import styles from "../css/components/Detail.module.css";
 
 const Detail = () => {
