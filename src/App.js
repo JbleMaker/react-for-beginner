@@ -1,14 +1,19 @@
-import { useState } from "react";
+import { createBrowserRouter } from "react-router-dom";
+import Home from "./routes/Home";
+import Detail from "./routes/Detail";
 
-function App() {
-  const [loading, setLoading] = useState(true);
-
-  return (
-    <div>
-      <h1>The Coins!</h1>
-      {loading ? <strong>Loading...</strong> : null}
-    </div>
-  );
-}
+const App = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/movie/:id",
+    element: <Detail />,
+  },
+  {
+    basename: process.env.PUBLIC_URL,
+  },
+]);
 
 export default App;
